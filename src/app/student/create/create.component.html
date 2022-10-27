@@ -1,0 +1,33 @@
+<div>
+    <div class="card bg-dark" style="height:65vh;margin:1rem">
+        <form #stdForm="ngForm" (ngSubmit)="stdForm.valid&&onSubmit()">
+            <h2 class="text-light text-center pt-4">Add Student</h2>
+            <div class="row mx-2 mt-5">
+                <div class="col-md-3">
+                    <label for="firstName" class="text-light">FirstName</label>
+                    <input id="firstName" type="text" class="form-control" name="firstName" [(ngModel)]="data.firstName" required #firstname="ngModel">
+                    <small class="text-danger" *ngIf="stdForm.submitted&&firstname.errors?.['required']">firstName required</small>
+                </div>
+                <div class="col-md-3">
+                    <label for="lastName" class="text-light">LastName</label>
+                    <input id="lastName" type="text" class="form-control" name="lastName" [(ngModel)]="data.lastName" required #lastName="ngModel">
+                    <small class="text-danger" *ngIf="stdForm.submitted&&lastName.errors?.['required']">LastName required</small>
+                </div>
+            
+                <div class="col-md-3">
+                    <label for="class" class="text-light">Class</label>
+                    <input id="class" type="text" class="form-control" name="class" [(ngModel)]="data.class" required #class="ngModel">
+                    <small class="text-danger" *ngIf="stdForm.submitted&&class.errors?.['required']">Class required</small>
+                </div>
+                <div class="col-md-3">
+                    <label for="phNo" class="text-light">PhNo</label>
+                    <input type="text" id="phNo" class="form-control" name="phNo" [(ngModel)]="data.phNo" required #phNo="ngModel">
+                    <small class="text-danger" *ngIf="stdForm.submitted&&phNo.errors?.['required']">phNo required required</small>
+                </div>      
+            </div>
+            <div style="text-align: center;">
+                <button class="btn btn-success mt-5">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

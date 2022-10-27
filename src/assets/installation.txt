@@ -1,0 +1,37 @@
+npm install bootstrap --save
+
+npm install bootstrap-icons --save
+
+npm install ngx-toastr --save@9.1.1
+
+npm install @angular/animations --save
+
+angular.json
+
+    "node_modules/bootstrap/dist/css/bootstrap.min.css",
+     "node_modules/ngx-toastr/toastr.css",
+
+style.css   
+    @import url("./node_modules/bootstrap/dist/css/bootstrap.min.css");
+    @import "~bootstrap-icons/font/bootstrap-icons.css';
+    @import '~ngx-toastr/toastr';
+
+    <i class="bi bi-trash-fill' style='color:black;">Delete</i>
+
+    <i class="bi bi-pencil-square">Edit</i>
+    <i class="bi bi-plus-square-fill">Create</i>
+
+
+    toastr
+    -----------
+
+import { ToastrModule } from 'ngx-toastr';
+
+ToastrModule.forRoot(),
+
+
+    @app.module.ts
+    
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+
+     BrowserAnimationsModule, 
