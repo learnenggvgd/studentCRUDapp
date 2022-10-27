@@ -1,3 +1,11 @@
+Database = JSON-SERVER
+
+db.json path = \src\assets\db
+
+ Run json-erver = npx json-server --watch db.json --port 3000
+ 
+  => http://localhost:3000/students
+ 
 # CurdOperaton
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
