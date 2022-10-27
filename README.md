@@ -1,8 +1,8 @@
 Database = JSON-SERVER
 
-db.json path = \src\assets\db
+Path = \src\assets\db
 
- Run json-erver = npx json-server --watch db.json --port 3000
+ Run inside the path json-erver = npx json-server --watch db.json --port 3000
  
   => http://localhost:3000/students
  
